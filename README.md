@@ -1,11 +1,9 @@
-# Baroque Me Baby — Generative Art
+# Baroque Me Baby — Generative Baroque Art
 
 [![Live Demo](https://img.shields.io/badge/demo-live-green?style=for-the-badge)](https://reyrove.github.io/Baroque-Me-Baby-Generative-Art)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-> **Baroque-inspired generative art.** Each refresh creates a unique ornate composition with decorative frames, layered geometric patterns, and rich color palettes.
-
-![Baroque Me Baby](Baroque-Me-Baby.jpg)
+> **Generative art meets baroque elegance.** Each refresh creates a unique ornate composition with decorative frames, layered geometric patterns, and rich color palettes.
 
 ## 🎨 Live Demo
 
@@ -21,19 +19,10 @@
   <em>Click the image or button to experience the generative baroque art</em>
 </div>
 
-## 👕 Apparel Preview
-
-<div align="center">
-  <img src="Baroque-Me-Baby.jpg" alt="Baroque Me Baby on T-Shirt" width="600" style="border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.3);"/>
-  <br>
-  <em>Baroque Me Baby artwork printed on a T-shirt</em>
-</div>
-
-## ✨ Features
+## 🎯 Features
 
 - **Baroque Aesthetic** — Ornate frames, decorative corner pieces, and intricate patterns
 - **4 Art Styles** — Concentric, Radial, Polygonal, and Organic curves
-- **5-15 Layers** — Complex layered compositions with depth
 - **Rich Color Palettes** — Randomly generated warm, cool, and balanced schemes
 - **Seed-Based** — Every composition is unique and reproducible via its seed
 - **Save & Share** — Download as PNG with seed in filename
@@ -44,14 +33,13 @@
   - `S` — Save image
   - `T` — Toggle apparel view
 
-## 🎯 Art Styles
+## 👕 Apparel Preview
 
-| Style | Description |
-|-------|-------------|
-| **Concentric** | Layered circles creating a mandala-like effect |
-| **Radial** | Lines radiating from center like a sunburst |
-| **Polygonal** | Geometric shapes with 3-8 sides |
-| **Organic** | Flowing, curved contours with natural feel |
+<div align="center">
+  <img src="Baroque-Me-Baby.jpg" alt="Baroque Me Baby on T-Shirt" width="600" style="border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.3);"/>
+  <br>
+  <em>Baroque Me Baby artwork printed on a T-shirt</em>
+</div>
 
 ## 🚀 Quick Start
 
@@ -157,12 +145,6 @@ Contributions are welcome! Feel free to:
 - Fork the repository
 - Create a feature branch
 - Submit a pull request
-
-### Ideas for Contributions:
-- New art styles
-- Additional frame designs
-- Color palette expansions
-- Performance optimizations
 
 ## 📄 License
 
