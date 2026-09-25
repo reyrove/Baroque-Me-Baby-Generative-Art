@@ -1,161 +1,205 @@
-# Baroque Me Baby — Generative Baroque Art
+# Baroque Me Baby
 
-[![Live Demo](https://img.shields.io/badge/demo-live-green?style=for-the-badge)](https://reyrove.github.io/Baroque-Me-Baby-Generative-Art)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+**A seed-based generative system for baroque-style geometric ornament.**
 
-> **Generative art meets baroque elegance.** Each refresh creates a unique ornate composition with decorative frames, layered geometric patterns, and rich color palettes.
-
-## 🎨 Live Demo
-
-<div align="center">
-  <a href="https://reyrove.github.io/Baroque-Me-Baby-Generative-Art" target="_blank">
-    <img src="demo-screenshot.jpg" alt="Baroque Me Baby Website Demo" width="800" style="border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.4);"/>
-  </a>
-  <br><br>
-  <a href="https://reyrove.github.io/Baroque-Me-Baby-Generative-Art" target="_blank">
-    <img src="https://img.shields.io/badge/🌐_View_Live_Demo-0a0a0a?style=for-the-badge&logo=githubpages&logoColor=white&color=c9a84c" alt="View Live Demo" width="300"/>
-  </a>
-  <br>
-  <em>Click the image or button to experience the generative baroque art</em>
-</div>
-
-## 🎯 Features
-
-- **Baroque Aesthetic** — Ornate frames, decorative corner pieces, and intricate patterns
-- **4 Art Styles** — Concentric, Radial, Polygonal, and Organic curves
-- **Rich Color Palettes** — Randomly generated warm, cool, and balanced schemes
-- **Seed-Based** — Every composition is unique and reproducible via its seed
-- **Save & Share** — Download as PNG with seed in filename
-- **Apparel Mode** — Preview artwork on a T-shirt mockup
-- **Responsive** — Works on desktop, tablet, and mobile
-- **Keyboard Shortcuts**:
-  - `R` — Regenerate
-  - `S` — Save image
-  - `T` — Toggle apparel view
-
-## 👕 Apparel Preview
-
-<div align="center">
-  <img src="Baroque-Me-Baby.jpg" alt="Baroque Me Baby on T-Shirt" width="600" style="border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.3);"/>
-  <br>
-  <em>Baroque Me Baby artwork printed on a T-shirt</em>
-</div>
-
-## 🚀 Quick Start
-
-### Local Development
-
-```bash
-# Clone the repository
-git clone https://github.com/reyrove/Baroque-Me-Baby-Generative-Art.git
-
-# Navigate to the directory
-cd Baroque-Me-Baby-Generative-Art
-
-# Open in browser
-open index.html
-# or use a live server
-```
-
-### Deploy to GitHub Pages
-
-1. Push to GitHub
-2. Go to Settings → Pages
-3. Select branch `main` and root folder
-4. Your site will be live at `https://reyrove.github.io/Baroque-Me-Baby-Generative-Art`
-
-## 🧠 How It Works
-
-The artwork is generated using a deterministic random number generator, seeded by timestamp + random noise. Every refresh:
-
-1. **Frame Generation**:
-   - Creates an ornate frame with 8-16 decorative elements
-   - Random color scheme from warm, cool, or balanced palettes
-   - Corner rosettes with petal patterns
-
-2. **Artwork Generation**:
-   - Selects from 4 art styles (Concentric, Radial, Polygonal, Organic)
-   - Generates 5-15 layers of increasing complexity
-   - Each layer includes random rotations and variations
-   - Optional decorative elements throughout
-
-3. **Final Touches**:
-   - Center dot completes the composition
-   - Clean black linework on white background
-
-## 📁 File Structure
-
-```
-Baroque-Me-Baby-Generative-Art/
-├── index.html          # Main application (all-in-one)
-├── Baroque-Me-Baby.jpg # T-shirt mockup image
-├── fav.svg             # Favicon
-├── demo-screenshot.jpg # Website demo screenshot
-├── README.md           # This file
-└── LICENSE             # MIT License
-```
-
-## 🛠️ Tech Stack
-
-- **Vanilla HTML/CSS/JS** — No dependencies
-- **Canvas API** — 2D rendering
-- **CSS Grid & Flexbox** — Responsive layout
-- **GitHub Pages** — Hosting
-
-## 🎯 Interactive Controls
-
-| Action | Keyboard | Button |
-|--------|----------|--------|
-| Regenerate | `R` | Click "regenerate" |
-| Save Image | `S` | Click "regenerate" |
-| Toggle Apparel | `T` | Click "apparel" |
-
-## 🔧 Customization
-
-You can tweak the generation parameters in `index.html`:
-
-- **Layer count**: Modify `layers` calculation (line ~320)
-- **Decoration count**: Adjust `decorationCount` (line ~220)
-- **Art styles**: Modify the `artworkType` conditions (line ~335-365)
-- **Color palettes**: Edit RGB ranges (line ~165-175)
-- **Frame width**: Adjust `frameWidth` calculation (line ~185)
-
-## 📱 Responsive Design
-
-The application automatically adapts to:
-- Desktop screens
-- Tablets
-- Mobile phones
-- Landscape orientation
-- Various aspect ratios
-
-## 🎨 Design Inspiration
-
-The baroque style is characterized by:
-- **Ornate detail** — Rich decorative elements
-- **Symmetry** — Balanced, structured compositions
-- **Grandeur** — Bold, dramatic visual statements
-- **Ornamentation** — Elaborate patterns and flourishes
-
-This generative art piece captures these elements through algorithmic interpretation.
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-- Fork the repository
-- Create a feature branch
-- Submit a pull request
-
-## 📄 License
-
-MIT License — see [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- Inspired by Baroque art and architecture
-- Designed as generative art for apparel
-- Special thanks to the generative art community
+A catalogue of computational textile compositions for fashion, textile and surface design — algorithmically drawn, seed-documented, and ready for production.
 
 ---
 
-**Built with ❤️ and baroque flair**
+## Overview
+
+Baroque Me Baby is a generative design system rather than a single artwork. Each composition is built from a baroque-style frame that wraps a layered geometric interior — concentric, radial, polygonal, or organic — and is fully reproducible from a single numeric seed.
+
+The system is designed for:
+
+- **Fashion houses** adapting ornament for apparel and accessories
+- **Textile studios** developing repeat patterns and yardage
+- **Surface designers** working across print, wallpaper, and interior applications
+
+Every composition can be licensed, adapted, or commissioned to a brief.
+
+---
+
+## Concept
+
+Ornament, when it is *generated* rather than drawn, becomes a language — infinite, precise, and quietly reproducible.
+
+The baroque frame has always been a computational structure: symmetrical, decorative, endlessly repeatable. Baroque Me Baby translates that structure into code. Each composition begins with a frame and unfolds inward through layers of ornament, until the interior becomes its own small architecture.
+
+The palette, the number of layers, the style of the interior, and the density of decoration are all derived from a single numeric seed.
+
+---
+
+## Features
+
+- **Seed-based generation** — every composition is defined by a numeric seed and can be regenerated exactly
+- **Deterministic output** — the same seed always produces the same composition
+- **Four interior styles** — Concentric, Radial, Polygonal, Organic
+- **Adaptive surfaces** — one seed applied across print, scarf, textile, and wall formats
+- **Archive** — eight curated seeds available for immediate loading
+- **Download** — export any composition as a high-resolution PNG
+- **Keyboard shortcuts** — `R` for new seed, `S` to save
+
+---
+
+## Project Structure
+
+```
+.
+├── index.html          # Main catalogue page
+├── images/
+│   ├── fav.svg         # Favicon
+│   ├── tote.png        # Mockup: tote bag
+│   ├── tee.png         # Mockup: t-shirt
+│   └── cushion.png     # Mockup: cushion
+└── README.md
+```
+
+---
+
+## How It Works
+
+### The Seed
+
+A numeric seed (a large integer) initializes a deterministic pseudo-random generator. From this seed, the system derives:
+
+- Background and frame palette
+- Number of layers (typically 5–15)
+- Interior style (Concentric, Radial, Polygonal, Organic)
+- Decoration count (typically 8–16)
+- Rotation offsets and per-layer variation
+
+Because the generator is deterministic, the same seed always produces the same composition — on any device, at any time.
+
+### The Frame
+
+A baroque border is drawn first, with:
+
+- A rounded rectangular main frame in one of three rotating colour schemes
+- An inner white field
+- Decorative elements placed radially around the frame edge
+- Ornamented corners with petal-like rosettes
+
+### The Interior
+
+Layered geometric marks are drawn inside the frame. Each layer rotates slightly relative to the previous one, creating a moiré-like interference that gives the composition its sense of depth.
+
+The interior style is chosen per seed:
+
+| Style       | Description                                              |
+|-------------|----------------------------------------------------------|
+| Concentric  | Nested circles contracting toward the center             |
+| Radial      | Lines radiating outward from a partially random inner ring |
+| Polygonal   | N-sided polygons, one per layer                          |
+| Organic     | Irregular closed curves with variable radius             |
+
+### The Surfaces
+
+The same seed is rendered across four surface formats:
+
+| Surface  | Aspect | Material          |
+|----------|--------|-------------------|
+| Print    | 1 : 1  | Cotton rag        |
+| Scarf    | 3 : 1  | Twill silk        |
+| Textile  | 4 : 3  | Fabric yardage    |
+| Wall     | 2 : 3  | Wallpaper         |
+
+Each surface uses the same underlying seed and structural logic — only the repeat, orientation, and scale change.
+
+---
+
+## Usage
+
+### In the browser
+
+1. Open `index.html` in any modern browser.
+2. Click **New Seed** to generate a new composition.
+3. Click **Download** to save the current plate as a PNG.
+4. Scroll to the **Archive** section and click any plate to load it into Plate 001.
+
+### Keyboard shortcuts
+
+| Key | Action          |
+|-----|-----------------|
+| `R` | New seed        |
+| `S` | Save as PNG     |
+
+### Reproducing a composition
+
+Each composition is identified by an 8-digit seed label displayed in the metadata panel. To reproduce a specific composition, note the seed and regenerate it programmatically:
+
+```js
+const rng = new RandomGenerator(seed);
+renderComposition(canvas, { rng });
+```
+
+---
+
+## Technical Notes
+
+- **No build step.** The system is a single HTML file with inline CSS and JavaScript.
+- **No dependencies.** All drawing is done with the native Canvas 2D API.
+- **Deterministic.** The `RandomGenerator` class uses a xorshift-based PRNG seeded by an integer, so identical seeds produce identical outputs.
+- **Responsive.** The layout adapts from large desktop down to very small mobile devices (tested at 360px viewport width).
+- **Accessible.** Supports `prefers-reduced-motion`. Pinch-zoom is enabled.
+
+### Browser support
+
+Tested in current versions of:
+
+- Chrome / Edge
+- Firefox
+- Safari (desktop and iOS)
+
+---
+
+## Licensing
+
+All Baroque Me Baby compositions are **seed-documented** and available for licensing across textile, surface, and print applications.
+
+- **Standard licenses** cover single-product production runs.
+- **Commercial use, custom editions, or exclusive rights** are available on request.
+
+Each license is issued against a specific seed ID. Regeneration of the same seed produces the identical composition — ensuring reproducibility between artist, studio, and manufacturer.
+
+For licensing enquiries: [reyhanehdaneshdoost@gmail.com](mailto:reyhanehdaneshdoost@gmail.com)
+
+---
+
+## Commission
+
+Baroque Me Baby is a generative design system, not a fixed artwork. It can be adapted for specific briefs:
+
+| Service     | Description                                                       |
+|-------------|-------------------------------------------------------------------|
+| Licensing   | Existing seeds from the archive, licensed for production use      |
+| Commission  | New compositions designed to your palette, repeat, and product    |
+| Systems     | A private generative tool built for your studio's ongoing use     |
+
+To begin a conversation: [reyhanehdaneshdoost@gmail.com](mailto:reyhanehdaneshdoost@gmail.com)
+
+---
+
+## Credits
+
+- **Design & Generative System** — Reyhaneh Daneshdoost
+- **Typefaces** — Cormorant Garamond · DM Mono
+- **Platform** — Reyrove Studio
+- **Edition** — Baroque Me Baby, Autumn 2026
+
+### On AI tools
+
+Where technical obstacles were encountered, AI tools were used for debugging and code optimization. Every structural, aesthetic, and conceptual decision remained the artist's own.
+
+---
+
+## Links
+
+- Website — [reyrove.github.io](https://reyrove.github.io/)
+- Instagram — [@rey._.rove](https://www.instagram.com/rey._.rove/)
+- LinkedIn — [Reyhaneh Daneshdoost](https://www.linkedin.com/in/reyhaneh-daneshdoost-730481160/)
+- X — [@reyrove](https://x.com/reyrove)
+
+---
+
+© Baroque Me Baby · All compositions reproducible by seed · Computational Textile Design
